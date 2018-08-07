@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <title>Document Title</title>
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+           <div class="col-sm-12 text-center">
+                <!-- <a class="navbar-brand" href="assets/images/trainlogo.jpg">
+                <img src="assets/images/trainlogo.jpg" width="75" height="50" class="align-top mr-2 d-inline-block" alt="trainlogo"> -->
+                <h1 class='d-inline-block'>Employee Data Management</h1>
+        </a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2 border border-dark">
+        <div class="row">
+            <div class="col-sm-12 text-center bg-dark text-white">
+                Current Employees
+            </div>
+            <div class="col-sm-12">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">Employee Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">Months Worked</th>
+                        <th scope="col">Monthly Rate ($)</th>
+                        <th scope="col">Total Billed ($)</th>
+                    </tr>
+                    </thead>
+                    <tbody id="employeeInfo">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2 border border-dark">
+        <div class="row">
+            <div class="col-sm-12 text-center bg-dark text-white">
+                Add Employee
+            </div>
+            <div class="col-sm-12">
+                <form>
+                    <div class="form-group mt-2">
+                            <label for="employeeName">Employee Name
+                            </label>
+                            <textarea class="form-control" id="employeeName" rows="1">
+                            </textarea>
+                        </div>
+                    <div class="form-group mt-2">
+                            <label for="role">Role
+                            </label>
+                            <textarea class="form-control" id="role" rows="1">
+                            </textarea>
+                        </div>
+                    <div class="form-group mt-2">
+                            <label for="startDate">Start Date (MM/DD/YYYY)
+                            </label>
+                            <textarea class="form-control" id="startDate" rows="1">
+                            </textarea>
+                        </div>
+                    <div class="form-group mt-2">
+                            <label for="monthlyRate">Monthly Rate
+                            </label>
+                            <textarea class="form-control" id="monthlyRate" rows="1">
+                            </textarea>
+                            <button type="submit" class="btn btn-dark mt-2" id="submit">Submit
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- jquery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- javascript.js -->
+<script src="assets/javascript/javascript.js">
+</script>
+
+</body>
+
+</html>
